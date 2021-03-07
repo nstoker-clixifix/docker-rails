@@ -1,0 +1,5 @@
+desc 'Show env var'
+task :x do
+    puts "ENV['DATABASE_URL'] '#{ENV['DATABASE_URL']}'"
+    puts "ENV['DATABASE_URL'].gsub('?','_development?') '#{ENV['DATABASE_URL'].gsub('?','_development?')}'"
+end
